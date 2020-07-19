@@ -407,6 +407,10 @@ public class GameApplication extends com.almasb.fxgl.app.GameApplication {
                     spawn("brick", new SpawnData(x, y).put("color", Color.DARKGRAY));
                 else if (currentLevel.charAt(i) == '2')
                     spawn("brick", new SpawnData(x, y).put("color", Color.RED));
+                else if(currentLevel.charAt(i) == '3')
+                    spawn("brick", new SpawnData(x, y).put("color", Color.BLUE));
+                else if(currentLevel.charAt(i) == 'X')
+                    spawn("brick", new SpawnData(x, y).put("color", Color.BLACK));
                 i++;
                 x += brickWidth;
             }
